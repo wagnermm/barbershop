@@ -14,3 +14,12 @@
 - jQuery Mask
 - Owl Carousel
 - Bootstrap
+
+## References
+- https://jquery.com/
+- https://jqueryui.com/
+- https://igorescobar.github.io/jQuery-Mask-Plugin/
+- https://owlcarousel2.github.io/OwlCarousel2/
+- https://getbootstrap.com/docs/5.2/getting-started/introduction/
+- https://www.canva.com/
+- https://www.favicon-generator.org/
