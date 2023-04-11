@@ -28,3 +28,6 @@
 - https://getbootstrap.com/docs/5.2/getting-started/introduction/
 - https://www.canva.com/
 - https://www.favicon-generator.org/
+
+## Logo
+<img src="./images/logo.jpg" alt="logo">
