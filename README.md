@@ -7,3 +7,10 @@
 - HTML5
 - CSS3
 - JavaScript
+
+## Frameworks/Libraries
+- jQuery
+- jQuery UI
+- jQuery Mask
+- Owl Carousel
+- Bootstrap
