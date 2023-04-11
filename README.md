@@ -4,14 +4,14 @@
 - Web page of a barbershop that I have been developing through studies of some technologies.
 
 ## Key technologies I will use in this project:
+- HTML5
+- CSS3
+- JavaScript
 <p align="left">
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="120" height="120" />
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="Css3" width="120" height="120"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="120" height="120"/>
 </p>
-- HTML5
-- CSS3
-- JavaScript
 
 ## Frameworks/Libraries
 - jQuery
