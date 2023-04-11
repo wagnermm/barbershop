@@ -29,7 +29,3 @@
 - https://www.canva.com/
 - https://www.favicon-generator.org/
 
-## Logo
-<div width="100%" text-alin="center">
-    <img src="./src/images/logo.jpg" alt="logo">
-</div>
