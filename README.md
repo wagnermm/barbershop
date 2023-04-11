@@ -30,4 +30,4 @@
 - https://www.favicon-generator.org/
 
 ## Logo
-<img src="../images/logo.jpg" alt="logo">
+<img src="./src/images/logo.jpg" alt="logo">
