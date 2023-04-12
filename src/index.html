@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-12 md-12">
                     <h1 id="header-info">Corte de cabelo profissional com qualidade, segurança e um ambiente confortável</h1>
-                    <h2 id="header-info">Não é apenas corte de cabelo, é uma experiência única de estilo. Crie a sua conosco!</h2>
+                    <h2 id="header-info">Não é apenas um corte de cabelo, é uma experiência única de estilo. Crie a sua conosco!</h2>
                     <h3 id="header-info">Estamos há mais de 5 anos no mercado, com grande experiência e satisfação de nossos clientes, nosso estilo é inspirado num ambiente familiar, por isso temos cortes para todas as idades.</h3>
                     <button class="btn-light"><a href="#agendar">Quero agendar</a></button>
                 </div>
@@ -106,15 +106,20 @@
                 <div class="col-6 md-12">
                     <div id="agendar">
                         <h2>Agende seu horário!</h2>
-                        <h6>Atendemos de segunda à sexta das 08:00 às 18:00 e aos sábados das 08:00 às 14:00. Nosso endereço é Rua Manoel Carvalho próximo ao ponto da bateira.</h6>
+                        <h4>Atendemos de segunda à sexta das 08:00 às 18:00 e aos sábados das 08:00 às 14:00. Nosso endereço é Av. Dom Casmurro 1555.</h4>
                     </div>
                 </div>
                 <div class="col-6 md-12">
-                    <form name="form" class="form" method="post">       
+                    <form name="form" class="form" method="post" id="form">   
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                        <input type="text" name="nome" class="form-control" id="name" placeholder="Digite seu nome" minlength="2">         
+                        <div id="messageNome"></div>
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail">           
+                        <div id="messageEmail"></div>
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="8" maxlength="12">          
+                        <div id="messagePhone"></div>
                         <label for="cortes" class="form-label">Escolha seu corte</label>
                         <select class="form-control" name="cortes" id="cortes" required>
                             <option value=""></option>
@@ -126,7 +131,7 @@
                             <option value="asa delta">Asa Delta</option>
                             <option value="social">Social</option>
                         </select>
-                        <button type="submit" name="btn" id="btn" class="btn-light">Enviar</button>
+                        <button type="submit" name="btn" id="btn" class="btn-light" disabled>Enviar</button>
                     </form>
                 </div>
             </div>
