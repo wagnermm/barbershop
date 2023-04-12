@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-16x16.png">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Fio da Navalha</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 md-12">
+                    <img src="./images/logo.jpg" alt="logo">
+                </div>
+                <div class="col-12 md-12">
+                    <h1 id="header-info">Corte de cabelo profissional com qualidade, segurança e um ambiente confortável</h1>
+                    <h2 id="header-info">Não é apenas corte de cabelo, é uma experiência única de estilo. Crie a sua conosco!</h2>
+                    <h3 id="header-info">Estamos há mais de 5 anos no mercado, com grande experiência e satisfação de nossos clientes, nosso estilo é inspirado num ambiente familiar, por isso temos cortes para todas as idades.</h3>
+                    <button class="btn-light"><a href="#agendar">Quero agendar</a></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="featured" class="featured-item">
+        <div class="container" id="products">
+            <div class="row">
+                <div class="col-12 md-12">
+                    <div class="line-up">
+                        <h1>Escolha seu corte</h1>
+                    </div>
+                </div>
+                <div class="col-12 md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="./images/corte-1.jpg" alt="Item 1">
+                            <h4>Modelo 1</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-2.jpg" alt="Item 2">
+                            <h4>Modelo 2</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-3.jpg" alt="Item 3">
+                            <h4>Modelo 3</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-4.jpg" alt="Item 4">
+                            <h4>Modelo 4</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-5.jpg" alt="Item 5">
+                            <h4>Modelo 5</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-2.jpg" alt="Item 6">
+                            <h4>Modelo 6</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-1.jpg" alt="Item 7">
+                            <h4>Modelo 7</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./images/corte-3.jpg" alt="Item 8">
+                            <h4>Modelo 8</h4>
+                            <h6>Valor R$ 40,00</h6>
+                            <a href="#agendar">Escolher este</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="midias">
+                <div class="col-6 md-12">
+                    <img src="./images/logo.jpg" alt="logo">
+                </div>
+                <div class="col-6 md-12" id="midias-contato">
+                    <nav><a href=""><img src="./images/telefone-fixo.png" alt="telefone"></a>(**) ****-****</nav>
+                    <nav><a href=""><img src="./images/whatsapp.png" alt="whatsapp"></a>(**) 9 ****-****</nav>
+                    <nav><a href=""><img src="./images/facebook.png" alt="facebook"></a>https://pt-br.facebook.com/login</nav>
+                    <nav><a href=""><img src="./images/instagram.png" alt="instagram"></a>https://www.instagram.com</nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 md-12">
+                    <div id="agendar">
+                        <h2>Agende seu horário!</h2>
+                        <h6>Atendemos de segunda à sexta das 08:00 às 18:00 e aos sábados das 08:00 às 14:00. Nosso endereço é Rua Manoel Carvalho próximo ao ponto da bateira.</h6>
+                    </div>
+                </div>
+                <div class="col-6 md-12">
+                    <form name="form" class="form" method="post">       
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                        <label for="cortes" class="form-label">Escolha seu corte</label>
+                        <select class="form-control" name="cortes" id="cortes" required>
+                            <option value=""></option>
+                            <option value="degrade">Degradê</option>
+                            <option value="top-knot">Top Knot (coque samurai)</option>
+                            <option value="militar">Militar</option>
+                            <option value="moicano">Moicano</option>
+                            <option value="surfista">Surfista</option>
+                            <option value="asa delta">Asa Delta</option>
+                            <option value="social">Social</option>
+                        </select>
+                        <button type="submit" name="btn" id="btn" class="btn-light">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../vendor/jquery/jquery-3.6.1.min.js"></script>
+    <script src="../vendor/owl/js/owl.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
