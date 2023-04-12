@@ -112,13 +112,13 @@
                 <div class="col-6 md-12">
                     <form name="form" class="form" method="post" id="form">   
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" name="nome" class="form-control" id="name" placeholder="Digite seu nome" minlength="2">         
-                        <div id="messageNome"></div>
+                        <input type="text" name="nome" class="form-control" id="name" placeholder="Digite seu nome" minlength="4">         
+                        <div id="messageName"></div>
                         <label for="email" class="form-label">E-mail</label>
                         <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail">           
                         <div id="messageEmail"></div>
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="8" maxlength="12">          
+                        <input type="text" name="telefone" class="form-control" id="telefone" placeholder="Digite seu telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" minlength="8" maxlength="12" required>          
                         <div id="messagePhone"></div>
                         <label for="cortes" class="form-label">Escolha seu corte</label>
                         <select class="form-control" name="cortes" id="cortes" required>
@@ -140,6 +140,6 @@
 
     <script src="../vendor/jquery/jquery-3.6.1.min.js"></script>
     <script src="../vendor/owl/js/owl.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

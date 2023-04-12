@@ -180,7 +180,7 @@ a:hover {
     }
 }
 
-#messageNome, #messageEmail,
+#messageName, #messageEmail,
 #messagePhone {
     color: #aa0000;
     font-weight: bolder;
