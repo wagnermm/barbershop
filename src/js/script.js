@@ -19,6 +19,26 @@ form.onsubmit = function() {
         document.getElementById('messageName').innerHTML = ""
     }
 }
+
+function validaName(elemento) {
+    elemento.addEventListener('focusout', function() {
+        const nameValid = /^[a-z]/i
+        if(this.value.match(nameValid)){
+            document.querySelector('#messageName').innerHTML = ""
+            document.querySelector('#btn').disabled = false
+            return false
+        } else {
+            document.querySelector('#messageName').innerHTML = "Digite um nome válido"
+            document.querySelector('#btn').disabled = true
+        }
+    })
+}
+let fieldName = document.querySelectorAll('input#name')
+  for( let emFoco of fieldName) {
+      validaName(emFoco)
+  }
+
+
 function validaEmail(elemento){
     elemento.addEventListener('focusout', function() {
         const emailValid = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i
@@ -36,6 +56,7 @@ function validaEmail(elemento){
   for( let emFoco of fieldEmail) {
       validaEmail(emFoco)
   }
+
 
   function validaPhone(elemento){
     elemento.addEventListener('focusout', function() {
