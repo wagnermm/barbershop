@@ -29,5 +29,5 @@
 - https://www.canva.com/
 - https://www.favicon-generator.org/
 
-  <img src="./src/images/giphy.gif" alt="gif" width="300px">
+  <img src="./src/images/giphy.gif" alt="gif" width="300px" align="left">
 
