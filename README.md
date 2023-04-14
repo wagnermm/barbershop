@@ -28,6 +28,3 @@
 - https://getbootstrap.com/docs/5.2/getting-started/introduction/
 - https://www.canva.com/
 - https://www.favicon-generator.org/
-
-  <img src="./src/images/giphy.gif" alt="gif" width="300px" align="left">
-
