@@ -31,6 +31,7 @@ header img {
     align-items: center;
     font-weight: bold;
     box-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px #000000;
     border-radius: 5px;
 }
 
@@ -128,6 +129,10 @@ a:hover {
 
 .form {
     margin: 50px 0 30px 0;
+}
+
+label {
+    text-shadow: 1px 1px 2px #000000;
 }
 
 /*Responsive*/
