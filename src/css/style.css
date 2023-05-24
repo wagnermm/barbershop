@@ -131,12 +131,21 @@ a:hover {
     margin: 30px 0 30px 0;
 }
 
-#cog-0-label,
- #cog-1-label,
- #cog-2-label,
- #cog-3-label {
-    text-shadow: 1px 1px 2px #000000 !important;
- }
+label {
+    text-shadow: 1px 1px 2px #000000
+}
+
+#select-agenda {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#date, #time {
+    width: 40%;
+    height: 40px;
+}
 
 /*Responsive*/
 @media(max-width: 480px) {
@@ -192,18 +201,4 @@ a:hover {
 #messagePhone {
     color: #aa0000;
     font-weight: bolder;
-}
-
-.cog-abuse {
-    visibility: hidden !important;
-}
-
-.cog-form--dark-background .cog-branding--minimal .cog-branding__powered {
-    overflow: hidden !important;
-    visibility: hidden !important;
-    padding: 0 !important;
-    width: 1px !important;
-    background-color: #000000 !important;
-    border: 1px solid #000000 !important;
-    cursor: auto !important;
 }
