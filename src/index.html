@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Fio da Navalha</title>
+    <title>BarberShop</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-12 md-12">
+            <div class="row" id="header">
+                <div class="col-6 md-12" id="nav-bar">
                     <img src="./images/logo.jpg" alt="logo">
+                </div>
+                <div class="col-6 md-12" id="nav-bar">
+                    <div class="menu-mobile">
+                        <div className='line1'></div>
+                        <div className='line2'></div>
+                        <div className='line3'></div>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#midias">Contato</a></li>
+                            <li><a href="#agendar">Agendar</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-mobile">
+                        <div class="close">X</div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#midias">Contato</a></li>
+                            <li><a href="#agendar">Agendar</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="col-12 md-12">
                     <h1 id="header-info">Corte de cabelo profissional com qualidade, segurança e um ambiente confortável</h1>
@@ -31,7 +55,7 @@
             <div class="row">
                 <div class="col-12 md-12">
                     <div class="line-up">
-                        <h1>Confira nosso trabalho</h1>
+                        <h1 id="sobre">Confira nosso trabalho</h1>
                     </div>
                 </div>
                 <div class="col-12 md-12">
@@ -94,8 +118,8 @@
                 <div class="col-6 md-12" id="midias-contato">
                     <nav><a href=""><img src="./images/telefone-fixo.png" alt="telefone"></a>(**) ****-****</nav>
                     <nav><a href=""><img src="./images/whatsapp.png" alt="whatsapp"></a>(**) 9 ****-****</nav>
-                    <nav><a href=""><img src="./images/facebook.png" alt="facebook"></a>https://pt-br.facebook.com/login</nav>
-                    <nav><a href=""><img src="./images/instagram.png" alt="instagram"></a>https://www.instagram.com</nav>
+                    <nav><a href="https://www.facebook.com/" target="blank"><img src="./images/facebook.png" alt="facebook"></a>https://pt-br.facebook.com/login</nav>
+                    <nav><a href="https://www.instagram.com/" target="blank"><img src="./images/instagram.png" alt="instagram"></a>https://www.instagram.com</nav>
                 </div>
             </div>
         </div>
@@ -142,10 +166,11 @@
                     </form>
                 </div>
             </div>
-            </div>
+        </div>
+        <div class="top">
+            <a href="#top">Voltar ao topo</a>
         </div>
     </div>
-
     <script src="../vendor/jquery/jquery-3.6.1.min.js"></script>
     <script src="../vendor/owl/js/owl.js"></script>
     <script src="./js/script.js"></script>
