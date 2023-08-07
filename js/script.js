@@ -1,5 +1,5 @@
 // Menu Mobile
-var openMenu = document.querySelector('.menu-mobile').addEventListener('click', function() {
+var openMenu = document.querySelector('.btn-mobile').addEventListener('click', function() {
     document.querySelector('.nav-mobile').style.visibility="visible"
 })
 var closeMenu = document.querySelector('.close').addEventListener('click', function() {
@@ -9,7 +9,12 @@ var closeMenu = document.querySelector('.close').addEventListener('click', funct
 // Owl Carousel
 $(document).ready(function() {
 
-    $('.owl-carousel').owlCarousel()
+    $('.owl-carousel').owlCarousel({
+        items: 3,
+        loop: true,
+        nav: true,
+        margin: 10
+    })
     
     $('.featured-item a').addClass('btn btn-light stretch-link')
     

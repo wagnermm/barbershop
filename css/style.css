@@ -8,25 +8,38 @@
 
 body {
     overflow-x: hidden;
+    background-color: #000000;
 }
 
 /* Header*/
 header {
-    color: rgb(255, 255, 255); 
+    max-width: 100%;
+    display: flex;
+    align-items: center;
     text-align: center;
     background-image: url(../images/mesa-2.webp);
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px 150px 150px 150px
+    background-position: center center;
+    overflow-x: hidden;
 }
 
-header img {
-    width: 250px;
-    box-shadow: 2px 2px 4px #333;
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
 }
 
-#nav-bar {
-    margin-bottom: 4rem;
+.logo {
+    margin-top: 1rem;
+}
+
+
+.logo img {
+    width: 180px;
+    border-radius: 0.5rem;
 }
 
 .nav {
@@ -34,7 +47,6 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .nav ul {
@@ -45,16 +57,20 @@ header img {
 
 .nav li {
     display: flex;
-    font-size: 24px;
     font-family: 'Charm', cursive;
     cursor: pointer;
     text-shadow: 1px 1px 1px #333;
 }
 
+.nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
 .nav a:hover {
-    color: #da4003;
-    text-shadow: 1px 1px 1px #333;
-    box-shadow: 1px 1px 2px #fff;
+    color: #ff4800;
+    border-bottom: 1px solid #ff4800;
 }
 
 .nav-mobile {
@@ -95,17 +111,101 @@ header img {
     display: none;
 }
 
-#header-info, #agendar {
-    font-family: 'Charm', cursive;
-    margin: 20px 0 40px 0;
+.midias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    font-weight: bold;
-    box-shadow: 1px 1px 2px #fff;
-    text-shadow: 1px 1px 2px #000000;
-    border-radius: 5px;
 }
 
-button {
+.midias ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.midias li {
+    list-style: none;
+}
+
+.midias a {
+    padding: 0.3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.midias a:hover {
+    box-shadow: 1px 1px #fff;
+}
+
+.template {
+    margin-bottom: 6rem;
+}
+
+.template-text {
+    font-family: 'Charm', cursive;
+    letter-spacing: 0.1rem;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 1px 1px #fff;
+    text-shadow: 1px 1px 2px #000000;
+    border-radius: 5px;
+    margin-bottom: 5rem;
+}
+
+.table {
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: 'Charm', cursive;
+    color:  #fff;
+    background: rgba(0, 0, 0,0.9);
+}
+
+.table h1 {
+    font-size: 4rem;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.table-title {
+    font-size: 2.5rem;
+    color: #ff4800;
+}
+
+.table-container td {
+    font-size: 1.8rem;
+}
+
+.table-footer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agendar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.agendar button {
     border: none;
     border-radius: 10px;
     background-color: #ff4800;
@@ -115,23 +215,20 @@ button {
     padding: 8px;
 }
 
-button:hover {
+.agendar button:hover {
     background-color: #da4003;
 }
 
-#btn {
-    margin-top: 2rem;
-    width: 100%;
-}
-
-#btn:disabled {
-    background: rgba(255, 72, 0, 0.8);
+.agendar a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /*Featured*/
-#featured {
-    background-color: black;
+.featured{
+    margin-top: 5rem;
 }
+
 .featured-items {
     margin-bottom: 70px;
 }
@@ -140,10 +237,15 @@ button:hover {
     transition: all 0.5s;
 }
 
-.line-up {
+.featured-title {
     text-align: center;
     color: white;
+    font-family: 'Charm', cursive;
 }
+
+.featured-title h1 {
+    font-size: 3rem;
+} 
 
 .featured-item img {
     width: 100%;
@@ -165,54 +267,129 @@ button:hover {
     margin-bottom: 10px;
 }
 
-#midias .btn-light {
-    background-color: #000000;
-    border: none;
-    margin-bottom: 30px;
+.owl-nav {
+    width: 100% !important;
+    text-align: center !important;
 }
 
-#midias nav {
-    color: #ffffff;
+.owl-prev, .owl-next {
+    font-size: 6rem !important;
+    color: #fff !important;
 }
 
+
+/* About */
+.about {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.about-logo img {
+    border-radius: 0.5rem;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Charm', cursive;
+    color: #fff;
+}
+
+.about-info h1 {
+    font-size: 4rem;
+}
+
+.about-info p {
+    font-size: 1.6rem;
+}
+
+/* Foter */
 .footer {
-    color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
     background-image: url(../images/mesa.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#agendar {
-    margin-top: 50px;
+.footer-info {
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
+.footer-text {
+    width: 600px;
+    padding: 2rem;
+    background: rgba(0, 0, 0,0.9);
+    color: #fff;
+    font-family: 'Charm', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10rem;
 }
 
-a:hover {
-    color: #ffffff;
+.footer-text-title {
+    border-bottom: 1px solid #fff;
 }
 
-.form {
-    margin: 30px 0 50px 0;
-}
-
-label {
-    text-shadow: 1px 1px 2px #000000
-}
-
-#select-agenda {
+.footer-midias {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
-#date, #time {
-    width: 40%;
-    height: 40px;
+.footer-midias ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-midias li {
+    list-style: none;
+}
+
+.footer-midias a {
+    padding: 0.3rem;
+    font-size: 2rem;
+    background: rgba(0, 0, 0,0.8);
+    color: #fff;
+    box-shadow: 1px 1px #fff;
+    border-radius: 0.5rem;
+}
+
+.footer-midias a:hover {
+    background: #000000;
+    box-shadow: none;
+}
+
+.footer-form {
+    width: 100%;
+}
+
+.cog-branding, .cog-branding--minimal,
+.cog-abuse {
+    display: none !important;
 }
 
 .top {
@@ -257,7 +434,7 @@ label {
         visibility: hidden;
     }
 
-    .menu-mobile div {
+    .btn-mobile div {
         width: 3rem;
         height: 0.4rem;
         margin: 0.3rem;
@@ -265,7 +442,7 @@ label {
        
     }
 
-    .menu-mobile {
+    .btn-mobile {
         cursor: pointer;
         display: block;
     }
@@ -309,10 +486,4 @@ label {
         padding: 0;
         text-align: center;
     }
-}
-
-#messageName, #messageEmail,
-#messagePhone {
-    color: #aa0000;
-    font-weight: bolder;
 }
