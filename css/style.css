@@ -13,7 +13,6 @@ body {
 
 /* Header*/
 header {
-    max-width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -25,6 +24,7 @@ header {
 
 .sidebar {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,6 +40,11 @@ header {
 .logo img {
     width: 180px;
     border-radius: 0.5rem;
+}
+
+.logo img:hover {
+    opacity: 80%;
+    box-shadow: 1px 1px #000000;
 }
 
 .nav {
@@ -143,24 +148,52 @@ header {
 }
 
 .template {
-    margin-bottom: 6rem;
+    position: relative;
+    height: 30vh;
+    margin-bottom: 5rem;
+    overflow-y: hidden;
 }
 
 .template-text {
+    position: absolute;
+    top: 0;
     font-family: 'Charm', cursive;
     letter-spacing: 0.1rem;
     align-items: center;
     color: #fff;
     font-weight: bold;
-    box-shadow: 1px 1px #fff;
+    border-bottom: 1px solid #fff;
     text-shadow: 1px 1px 2px #000000;
     border-radius: 5px;
-    margin-bottom: 5rem;
+    animation: text-animate 8s linear infinite;
+}
+
+.template-text h1 {
+    font-size: 4rem;
+}
+
+.template-text h2 {
+    font-size: 2rem;
+}
+
+@keyframes text-animate {
+    0% {
+        top: 50vh;
+    }
+    30% {
+        top: 0;
+    }
+    60% {
+        top: 0;
+    }
+    100% {
+        top: 0;
+    }
 }
 
 .table {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -250,6 +283,11 @@ header {
 .featured-item img {
     width: 100%;
 }
+
+.featured-item img:hover {
+    opacity: 80%;
+}
+
 .featured-item h4 {
     font-size: 17px;
     font-weight: 700;
@@ -259,12 +297,6 @@ header {
 }
 .featured-item:hover h4 {
     color: #ff4800;
-}
-.featured-item h6 {
-    color: #aaa;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .owl-nav {
@@ -295,6 +327,10 @@ header {
     border-radius: 0.5rem;
 }
 
+.about-logo img:hover {
+    opacity: 80%;
+}
+
 .about-info {
     display: flex;
     flex-direction: column;
@@ -303,6 +339,7 @@ header {
     text-align: center;
     font-family: 'Charm', cursive;
     color: #fff;
+    box-shadow: 1px 1px #fff;
 }
 
 .about-info h1 {
@@ -338,6 +375,7 @@ header {
     padding: 2rem;
     background: rgba(0, 0, 0,0.9);
     color: #fff;
+    box-shadow: 1px 1px #fff;
     font-family: 'Charm', cursive;
     display: flex;
     flex-direction: column;
@@ -385,6 +423,7 @@ header {
 
 .footer-form {
     width: 100%;
+    padding: 2rem;
 }
 
 .cog-branding, .cog-branding--minimal,
@@ -392,21 +431,8 @@ header {
     display: none !important;
 }
 
-.top {
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-}
-
-.top a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px 1px #333;
-}
-
 /*Responsive*/
 @media(max-width: 480px) {
-  
     html {
         position: absolute;
         width:100%;
@@ -414,26 +440,128 @@ header {
         overflow-y: scroll !important;
         overflow-x: hidden !important;
     }
-    
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .logo, .nav-bar, .midias {
+        margin: 0;
+        padding: 0;
+    }
+    .logo img {
+        border: 1px solid #000000;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .midias ul {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .template {
+        margin-bottom: 0;
+    }
+    .template-text h1 {
+        font-size: 2.5rem;
+    }
+    .template-text h2 {
+        font-size: 1.4rem;
+    }
+    .table h1 {
+        font-size: 3rem;
+    }
+    .table th {
+        font-size: 1.8rem;
+    }
+    .table td {
+        font-size: 1.4rem;
+    }
+    .featured {
+        padding: 0.5rem;
+        margin: 0;
+    }
+    .featured-title h1 {
+        font-size: 2rem;
+    }
     .featured-item {
         padding: 2px;
     }
-
     .featured-item .btn-light {
         --bs-btn-padding-x: 5px;
         --bs-btn-padding-y: 1px;
     }
+    .owl-nav {
+        display: none;
+    }
+    .about {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about-logo img {
+        width: 100%;
+    }
+    .about-info {
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+    }
+    .about-info h1 {
+        font-size: 2.6rem;
+    }
+    .about-info p {
+        font-size: 1.4rem;
+    }
+    .footer {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-info {
+        margin-top: 3rem;
+    }
+    .footer-text {
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none;
+        margin-bottom: 2rem;
+    }
 }
 
-@media(max-width: 768px) {
-    header {
-        padding: 10px;
+@media(max-width: 700px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
     }
-
+    .logo, .nav-bar, .midias {
+        margin: 0;
+        padding: 0;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .nav {
-        visibility: hidden;
+        display: none;
     }
-
     .btn-mobile div {
         width: 3rem;
         height: 0.4rem;
@@ -441,29 +569,86 @@ header {
         background: #da4003;
        
     }
-
     .btn-mobile {
         cursor: pointer;
         display: block;
     }
-
+    .midias ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .template {
+        margin-bottom: 0;
+    }
+    .template-text h1 {
+        font-size: 2.5rem;
+    }
+    .template-text h2 {
+        font-size: 1.4rem;
+    }
+    .table h1 {
+        font-size: 3rem;
+    }
+    .table th {
+        font-size: 1.8rem;
+    }
+    .table td {
+        font-size: 1.4rem;
+    }
+    .featured {
+        padding: 0.5rem;
+        margin: 0;
+    }
+    .featured-title h1 {
+        font-size: 2rem;
+    }
     .featured-item {
-        padding: 5px;
+        padding: 2px;
     }
-    
     .featured-item .btn-light {
-        font-size: 10px;
-        font-weight: bold;
+        --bs-btn-padding-x: 5px;
+        --bs-btn-padding-y: 1px;
     }
-    
-    .footer {
-        height: 100%;
-        padding: 0;
-        text-align: center;
+    .owl-nav {
+        display: none;
     }
-    
-    .col-6 {
+    .about {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    .about-logo img {
         width: 100%;
+    }
+    .about-info {
+        box-shadow: none;
+        border-bottom: 1px solid #fff;
+    }
+    .about-info h1 {
+        font-size: 2.6rem;
+    }
+    .about-info p {
+        font-size: 1.4rem;
+    }
+    .footer {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-info {
+        margin-top: 3rem;
+    }
+    .footer-text {
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none;
+        margin-bottom: 2rem;
     }
 }
 
