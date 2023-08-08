@@ -116,6 +116,11 @@ header {
 .template {
     position: relative;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-bottom: 5rem;
     overflow-y: hidden;
 }
@@ -128,7 +133,6 @@ header {
     align-items: center;
     color: #fff;
     font-weight: bold;
-    border-bottom: 1px solid #fff;
     text-shadow: 1px 1px 2px #000000;
     border-radius: 5px;
     animation: text-animate 8s linear infinite;
@@ -136,6 +140,7 @@ header {
 
 .template-text h1 {
     font-size: 4rem;
+    border-bottom: 1px solid #fff;
 }
 
 .template-text h2 {
@@ -147,13 +152,13 @@ header {
         top: 35vh;
     }
     30% {
-        top: 0;
+        top: 5vh;
     }
     60% {
-        top: 0;
+        top: 5vh;
     }
     100% {
-        top: 0;
+        top: 5vh;
     }
 }
 
@@ -588,9 +593,6 @@ header {
     .template-text h2 {
         font-size: 1.4rem;
     }
-    .table {
-        margin-top: 4rem;
-    }
     .table h1 {
         font-size: 3rem;
     }
@@ -705,6 +707,9 @@ header {
     }
     .template-text h2 {
         font-size: 1.4rem;
+    }
+    .table {
+        margin-top: 1rem !important;
     }
     .table h1 {
         font-size: 3rem;
