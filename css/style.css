@@ -104,13 +104,15 @@ header {
 .midias a {
     padding: 0.3rem;
     font-size: 2rem;
-    text-decoration: none;
+    background: rgba(0, 0, 0,0.8);
     color: #fff;
+    box-shadow: 1px 1px #fff;
     border-radius: 0.5rem;
 }
 
 .midias a:hover {
-    box-shadow: 1px 1px #fff;
+    background: #000000;
+    box-shadow: none;
 }
 
 .template {
@@ -328,7 +330,7 @@ header {
     padding: 3rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     background-image: url(../images/mesa.webp);
@@ -337,8 +339,12 @@ header {
 }
 
 .footer-info {
+    height: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-text {
@@ -352,7 +358,6 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 10rem;
 }
 
 .footer-text-title {
@@ -360,10 +365,18 @@ header {
 }
 
 .footer-midias {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.footer-midias p {
+    font-family: 'Charm', cursive;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 .footer-midias ul {
@@ -371,7 +384,6 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
 }
 
 .footer-midias li {
@@ -379,22 +391,18 @@ header {
 }
 
 .footer-midias a {
-    padding: 0.3rem;
     font-size: 2rem;
-    background: rgba(0, 0, 0,0.8);
-    color: #fff;
-    box-shadow: 1px 1px #fff;
-    border-radius: 0.5rem;
-}
-
-.footer-midias a:hover {
-    background: #000000;
-    box-shadow: none;
 }
 
 .footer-form {
     width: 100%;
     padding: 2rem;
+}
+
+.form-title {
+    font-family: 'Charm', cursive;
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
 .cog-branding, .cog-branding--minimal,
@@ -766,6 +774,7 @@ header {
     }
     .footer-info {
         margin-top: 3rem;
+        justify-content: space-evenly;
     }
     .footer-text {
         width: 100%;
