@@ -82,39 +82,6 @@ header {
     display: none;
 }
 
-.midias {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.midias ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.midias li {
-    list-style: none;
-}
-
-.midias a {
-    padding: 0.3rem;
-    font-size: 2rem;
-    background: rgba(0, 0, 0,0.8);
-    color: #fff;
-    box-shadow: 1px 1px #fff;
-    border-radius: 0.5rem;
-}
-
-.midias a:hover {
-    background: #000000;
-    box-shadow: none;
-}
-
 .template {
     position: relative;
     height: 30vh;
@@ -161,6 +128,17 @@ header {
     }
     100% {
         top: 5vh;
+    }
+    100% {
+        top: 5vh;
+    }
+    100% {
+        top: 5vh;
+        color: #ff4800;
+    }
+    100% {
+        top: 5vh;
+        color: #ff4800;
     }
 }
 
