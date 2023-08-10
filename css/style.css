@@ -40,11 +40,12 @@ header {
 .logo img {
     width: 180px;
     border-radius: 0.5rem;
+    box-shadow: 1px 1px #000000;
 }
 
 .logo img:hover {
     opacity: 80%;
-    box-shadow: 1px 1px #000000;
+    box-shadow: none;
 }
 
 .nav {
@@ -71,6 +72,7 @@ header {
     font-size: 2rem;
     text-decoration: none;
     color: #fff;
+    text-shadow: 1px 1px #000000;
 }
 
 .nav a:hover {
@@ -128,13 +130,6 @@ header {
     }
     100% {
         top: 5vh;
-    }
-    100% {
-        top: 5vh;
-    }
-    100% {
-        top: 5vh;
-        color: #ff4800;
     }
     100% {
         top: 5vh;
@@ -408,21 +403,12 @@ header {
         margin: 0;
         padding: 0;
     }
-    .logo img {
-        border: 1px solid #000000;
-    }
     .nav-bar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-    .midias ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .template {
         margin: 0;
@@ -520,15 +506,18 @@ header {
         display: none !important;
     }
     .btn-mobile div {
-        width: 3rem;
-        height: 0.4rem;
+        width: 2rem;
+        height: 0.2rem;
         margin: 0.3rem;
-        background: #da4003;
-       
+        background: #fff;
     }
     .btn-mobile {
         cursor: pointer;
         display: block !important;
+        background: rgba(218, 64, 3,0.8);
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+        border: 1px solid #000000;
     }
     .nav-mobile {
         position: fixed;
@@ -563,12 +552,6 @@ header {
         font-size: 3rem;
         color: #fff;
         cursor: pointer;
-    }
-    .midias ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .template {
         margin-bottom: 0;
@@ -667,23 +650,6 @@ header {
     }
     .nav a {
         font-size: 1.6rem;
-    }
-    .btn-mobile div {
-        width: 3rem;
-        height: 0.4rem;
-        margin: 0.3rem;
-        background: #da4003;
-       
-    }
-    .btn-mobile {
-        cursor: pointer;
-        display: none;
-    }
-    .midias ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .template {
         margin-bottom: 0;
