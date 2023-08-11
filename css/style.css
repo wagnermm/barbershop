@@ -232,6 +232,7 @@ header {
 
 .featured-item img:hover {
     opacity: 80%;
+    border: 2px solid #000;
 }
 
 .featured-item h4 {
