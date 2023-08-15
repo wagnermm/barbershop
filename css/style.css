@@ -158,13 +158,23 @@ header {
     width: 100%;
 }
 
-.table-title {
-    font-size: 2.5rem;
+.table-title th {
+    font-size: 3.5rem;
     color: #ff4800;
 }
 
-.table-container td {
+.table-container tr {
+    width: 100%;
     font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.table-price {
+    color: #da4003;
 }
 
 .table-footer {
@@ -335,29 +345,19 @@ header {
 }
 
 .footer-text-title {
+    font-size: 3rem;
     border-bottom: 1px solid #fff;
+    margin-bottom: 2rem;
 }
 
 .footer-midias {
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.footer-midias p {
-    font-family: 'Charm', cursive;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.footer-midias ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer-midias li {
@@ -377,6 +377,15 @@ header {
     font-family: 'Charm', cursive;
     color: #fff;
     margin-bottom: 1rem;
+}
+
+.form-title h2 {
+    font-size: 2rem;
+    color: #da4003;
+}
+
+.form-title h1 {
+    font-size: 2.5rem;
 }
 
 .cog-branding, .cog-branding--minimal,
