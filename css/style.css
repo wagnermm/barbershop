@@ -409,10 +409,6 @@ header {
         align-items: center;
         margin-bottom: 3rem;
     }
-    .logo, .nav-bar, .midias {
-        margin: 0;
-        padding: 0;
-    }
     .nav-bar {
         display: flex;
         flex-direction: column;
@@ -500,10 +496,6 @@ header {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
-    }
-    .logo, .nav-bar, .midias {
-        margin: 0;
-        padding: 0;
     }
     .nav-bar {
         display: flex;
@@ -644,10 +636,6 @@ header {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
-    }
-    .logo, .nav-bar, .midias {
-        margin: 0;
-        padding: 0;
     }
     .nav-bar {
         display: flex;
