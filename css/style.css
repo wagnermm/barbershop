@@ -51,8 +51,8 @@ header {
 .nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .nav ul {
@@ -80,19 +80,19 @@ header {
     border-bottom: 1px solid #ff4800;
 }
 
-.nav-mobile {
+.nav-bar {
     display: none;
 }
 
 .template {
     position: relative;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     overflow-y: hidden;
 }
 
@@ -407,14 +407,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3rem;
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 2rem;
     }
     .template {
         margin: 0;
@@ -498,11 +491,7 @@ header {
         margin-bottom: 3rem;
     }
     .nav-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        display: block;
     }
     .nav {
         display: none !important;
@@ -636,13 +625,6 @@ header {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
-    }
-    .nav-bar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
     .nav {
         display: flex;
