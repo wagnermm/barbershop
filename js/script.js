@@ -1,9 +1,9 @@
 // Menu Mobile
 var openMenu = document.querySelector('.btn-mobile').addEventListener('click', function() {
-    document.querySelector('.nav-mobile').style.display="flex"
+    document.querySelector('.nav-mobile').style.visibility="visible"
 })
 var closeMenu = document.querySelector('.close').addEventListener('click', function() {
-    document.querySelector('.nav-mobile').style.display="none"
+    document.querySelector('.nav-mobile').style.visibility="hidden"
 })
 
 // Owl Carousel
