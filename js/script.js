@@ -87,3 +87,14 @@ function validaEmail(elemento){
   for(let emFoco of fieldPhone) {
     validaPhone(emFoco)
   }
+
+  /*
+  {
+    "error": false,
+    "message": "O link foi encurtado",
+    "data": {
+        "id": 1076,
+        "shorturl": "https://bit.ly/3OMgAC6"
+    }
+}
+*/
