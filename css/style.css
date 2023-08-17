@@ -13,6 +13,8 @@ body {
 
 /* Header*/
 header {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -139,7 +141,6 @@ header {
 
 .table {
     width: 100%;
-    margin-top: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,10 +148,10 @@ header {
     padding: 2rem;
     font-family: 'Charm', cursive;
     color:  #fff;
-    background: rgba(0, 0, 0,0.9);
 }
 
 .table h1 {
+    margin-top: 5rem;
     font-size: 4rem;
 }
 
@@ -171,6 +172,10 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.table-container td {
+    width: 20%;
 }
 
 .table-price {
@@ -218,11 +223,8 @@ header {
     margin-top: 5rem;
 }
 
-.featured-items {
-    margin-bottom: 70px;
-}
 .featured-item {
-    padding: 20px;
+    padding: 1rem;
     transition: all 0.5s;
 }
 
@@ -560,8 +562,9 @@ header {
     .table th {
         font-size: 1.8rem;
     }
-    .table td {
-        font-size: 1.4rem;
+    .table-container td {
+        width: 100%;
+        font-size: 1rem !important;
     }
     .featured {
         padding: 0.5rem;
