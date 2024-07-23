@@ -86,10 +86,6 @@
                         <td>Máquina</td>
                         <td class="table-price">R$ 15</td>
                     </tr>
-                    <tr>
-                        <td>Freestyle (Riscos e Desenhos) </td>
-                        <td class="table-price">R$ 5,00</td>
-                    </tr>
                 </tbody>
                 <thead class="table-title">
                     <th>
@@ -131,20 +127,18 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="table-footer">
-                <h4>Preencha o formulário para agendar ou envie mensagem em nosso whatsapp</h4>
-                <div class="agendar">
-                    <button class="btn-light"><a href="#agendar">Quero agendar</a></button>
-                    <a href="https://api.whatsapp.com/send?phone=5541995178851" target="blank"><img src="./images/whatsapp.png" alt=""></a>
-                </div>
-            </div>
+        </div>
+    </section>
+    <section>
+        <div class="agendar">
+            <button class="btn-agendar"><a href="https://api.whatsapp.com/send?phone=5541995178851" target="blank">Agendar</a></button>
         </div>
     </section>
     <section class="featured">
         <div id="featured" class="featured-item">
             <div class="container" id="products">
                 <div class="row">
-                    <div class="col-12 md-12">
+                    <div class="col-12 md-12 mt-5">
                         <div class="featured-title">
                             <h1>Confira nosso trabalho</h1>
                         </div>
@@ -199,8 +193,11 @@
     </section>
     <section class="about" id="about">
         <div class="about-logo">
-            <img src="./images/logo.jpg" alt="logo">
-        </div>
+            <video class="video" autoplay loop muted>
+                <source src="./images/barber.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>        
         <div class="about-info">
             <h1>Sobre</h1>
             <p>Somos a Fio da Navalha, uma barbearia com um jeito único de cortar cabelo, garantimos qualidade e conforto para nossos clientes. Estamos no mercado há mais de 5 anos atendendo diversas famílias da cidade. Venha conhecer nosso trabalho.</p>
@@ -211,24 +208,20 @@
             <div class="footer-text">
                 <h2 class="footer-text-title">Agende seu horário!</h2>
                 <h4>Atendemos de Segunda à Sábado das 09:00 às 19:00. Nosso endereço fica na rua José Vicente Elias - Em frente ao posto 24hrs.</h4>
-                <div class="footer-midias">
-                    <h5>Clique no ícone abaixo para agendar</h5>
-                    <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=5541995178851" target="blank"><img src="./images/whatsapp.png" alt="whatsapp"></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="footer-form" id="agendar">
             <div class="form-title">
                 <h2>Preencha o formulário</h2>
-                <h1>E concorra a prêmios incríveis</h1>
             </div>
             <form name="form" class="form" method="post" id="form">
-                <script src="https://www.cognitoforms.com/f/seamless.js" data-key="B_dXDznDJkuuJ6sJ1m5cIQ" data-form="3"></script>
+                <script src="https://www.cognitoforms.com/f/seamless.js" data-key="Zze6lMjoIUqFxsoEYQqxGw" data-form="4"></script>
             </form>
         </div>
     </div>
+    <button class="scroll-top scroll-to-target" data-target="html">
+         <span><a href="https://api.whatsapp.com/send?phone=5541995178851" target="blank"><img src="./images/whats-icon.png" alt="whatsapp-button"></a></span>
+     </button>
     <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
     <script src="./vendor/owl/js/owl.js"></script>
     <script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>

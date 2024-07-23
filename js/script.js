@@ -10,11 +10,32 @@ var closeMenu = document.querySelector('.close').addEventListener('click', funct
 $(document).ready(function() {
 
     $('.owl-carousel').owlCarousel({
-        items: 3,
+        items: 4,
         loop: true,
         nav: true,
-        margin: 10
-    })
+        margin: 10,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            480: {
+                items: 2,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: true
+            },
+            1024: {
+                items: 4,
+                nav: true
+            }
+        }
+    });
+    
     
     $('.featured-item a').addClass('btn btn-light stretch-link')
     
@@ -88,13 +109,11 @@ function validaEmail(elemento){
     validaPhone(emFoco)
   }
 
-  /*
-  {
-    "error": false,
-    "message": "O link foi encurtado",
-    "data": {
-        "id": 1076,
-        "shorturl": "https://bit.ly/3OMgAC6"
+  window.addEventListener('scroll', function() {
+    const scrollButton = document.querySelector('.scroll-top');
+    if (window.scrollY > 100) {
+        scrollButton.classList.add('open');
+    } else {
+        scrollButton.classList.remove('open');
     }
-}
-*/
+});
